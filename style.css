@@ -1,0 +1,71 @@
+/*
+ Theme Name:   Terminal Child
+ Theme URI:    https://dhugs.com/terminal-child
+ Description:  Child theme for Terminal Blog.
+ Author:       Declan Huggins
+ Author URI:   https://dhugs.com
+ Version:      1.0.1
+ Template:     terminal-blog
+*/
+
+:root {
+    --body-background: #101010 !important;
+    --primary-color: #ffffff !important;
+    --color-background: #101010 !important;
+    --header-text-color: #ffffff !important;
+}
+
+/* Hide the reading-time and comment badge for articles*/
+.read-time-comment {
+    display: none !important;
+}
+
+/* Hide the re-gaptcha badge*/
+.grecaptcha-badge {
+    visibility: hidden !important; 
+}
+
+/* Override default button color */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	background: var(--color-background) !important;
+	color: var(--primary-color) !important;
+}
+
+/* Override the search widget button color*/
+.widget.widget_search .wp-block-search__inside-wrapper .wp-block-search__button {
+	color: var(--body-background) !important;
+}
+
+/* Override the navigation search icon color */
+.navigation-search .navigation-search-wrap .navigation-search-icon {
+	color: var(--primary-color) !important;
+}
+
+/* Override the navigation search form color */
+.navigation-search .navigation-search-wrap .navigation-search-form .search-form input.search-submit {
+	color: var(--body-background) !important;
+}
+
+/* Override the current pagination color */
+nav.navigation.pagination .nav-links span.current {
+	color: var(--body-background) !important;
+}
+
+/* Override the menu toggle background color */
+.menu-toggle {
+	background-color: var(--body-background) !important;
+	border: 2px solid var(--primary-color) !important;
+}
+
+/* Center the content within the entry header */
+.entry-header {
+    text-align: center;
+}
+
+/* Center the content within the entry meta section */
+.entry-meta {
+    text-align: center !important;
+}
